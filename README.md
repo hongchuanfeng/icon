@@ -7,3 +7,5 @@
 
 
 官网地址：
+
+![https://icon.openai2025.com](https://icon.openai2025.com/)
