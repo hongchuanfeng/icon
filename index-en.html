@@ -8,7 +8,6 @@
     <meta name="description" content="Online free image conversion icon tool, icon conversion, no need to log in, no need to pay, just leave after use, very convenient to use">
     <link rel="stylesheet" href="./css.css">
     <link href="bootstrap.min.css" rel="stylesheet" />
-    <link rel="canonical" href="https://icon.openai2025.com/index-en.html/">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LLM9RV8TM"></script>
     <script>
@@ -22,64 +21,110 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div class="row">
-        <div class="col-xs-6">
-            <h1 class="h-left">Image to Icon Converter</h1>
-        </div>
-        <div class="col-xs-6 h-right">
-                <a href="https://www.openai2025.com" target="_blank">Chuandao software toolbox</a>
-        </div>
-    </div>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">Image to Icon Converter</h1>
+                <div class="header-link">
+                    <a href="https://www.openai2025.com" target="_blank">Chuandao Software Toolbox</a>
+                </div>
+            </div>
+        </header>
 
   
-    <form id="form">
-        <div class='formLine'>
-            <span class="l">File:</span>
-            <div class="r file-r">
-                <p>Select a file: <input id="imageInput" type="file" name='file' accept="image/jpeg,image/gif,image/png,image/bmp,image/webp"></p>
-               
-            </div>
-        </div>
-        <div id="imageContainer"></div>
-        <div class='formLine'>
-            <span class="l">Size:</span>
-            <div class="r">
-                <p>
-                    <input type="checkBox" name="size" value="16" checked>16x16
-                    <input type="checkBox" name="size" value="32">32x32
-                    <input type="checkBox" name="size" value="48">48x48
-                    <input type="checkBox" name="size" value="96" checked>96x96
-                    <input type="checkBox" name="size" value="128">128x128
-                    <input type="checkBox" name="size" value="256" checked>256x256
-                    <input type="checkBox" name="size" value="512">512x512
-                </p>
-            </div>
-        </div>
-        <div class='formLine'>
-            <span class="l">Shape:</span>
-            <div class="r">
-                <p>
-                    <input type="radio" name="shape" value="square" checked>square
-                    <input type="radio" name="shape" value="circle">circle
-                    <input type="radio" name="shape" value="fillet">rounded square
-                </p>
-            </div>
-        </div>
-        <div class='formLine'>
-            <span class="l">Blank-leaving:</span>
-            <div class="r">
-                <p>
-                    <input type="checkBox" name="bleed" value="bleed" checked> enable (only works when the shape is rounded square)
-                </p>
-            </div>
-        </div>
-        <div class='formLine butotn-p'>
-            <button id="b" type="submit">Convert</button>
-        </div>
-    </form>
+        <main class="main-content">
+            <form id="form" class="converter-form">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label class="form-label">Select Image File</label>
+                        <div class="file-input-wrapper">
+                            <input id="imageInput" type="file" name='file' accept="image/jpeg,image/gif,image/png,image/bmp,image/webp" class="file-input">
+                            <div class="file-input-display">
+                                <span class="file-text">Click to select image file</span>
+                                <span class="file-icon">📁</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="imageContainer" class="image-preview"></div>
+                </div>
 
-    <center>(<a href="./index.html">Simplified Chinese</a> | <a href="./index-en.html">English</a>)</center>
+                <div class="form-section">
+                    <label class="form-label">Icon Size</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="16" checked>
+                            <span class="checkbox-text">16×16</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="32">
+                            <span class="checkbox-text">32×32</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="48">
+                            <span class="checkbox-text">48×48</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="96" checked>
+                            <span class="checkbox-text">96×96</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="128">
+                            <span class="checkbox-text">128×128</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="256" checked>
+                            <span class="checkbox-text">256×256</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="512">
+                            <span class="checkbox-text">512×512</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="form-label">Icon Shape</label>
+                    <div class="radio-group">
+                        <label class="radio-item">
+                            <input type="radio" name="shape" value="square" checked>
+                            <span class="radio-text">Square</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="shape" value="circle">
+                            <span class="radio-text">Circle</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="shape" value="fillet">
+                            <span class="radio-text">Rounded Square</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="bleed" value="bleed" checked>
+                        <span class="checkbox-text">Enable padding (only works with rounded square shape)</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button id="b" type="submit" class="convert-btn">
+                        <span class="btn-text">Start Converting</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <div class="language-switcher">
+                <a href="./index.html" class="lang-link">简体中文</a>
+                <span class="separator">|</span>
+                <a href="./index-en.html" class="lang-link active">English</a>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
@@ -140,18 +185,25 @@
     function showImg() {
         const imageInput = document.getElementById('imageInput');
         const imageContainer = document.getElementById('imageContainer');
+        const fileText = document.querySelector('.file-text');
+        const fileIcon = document.querySelector('.file-icon');
 
         imageInput.addEventListener('change', function (event) {
             const file = event.target.files[0];
             if (file) {
+                // Update file display
+                fileText.textContent = file.name;
+                fileIcon.textContent = '✓';
+                
+                // Clear previous preview
+                imageContainer.innerHTML = '';
+                
                 const reader = new FileReader();
                 reader.onload = function (e) {
                     const img = document.createElement('img');
                     img.src = e.target.result;
-                    img.style.maxWidth = '100%';
+                    img.className = 'preview-image';
                     imageContainer.appendChild(img);
-
-
                 };
                 reader.readAsDataURL(file);
             }

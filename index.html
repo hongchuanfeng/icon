@@ -8,7 +8,6 @@
     <meta name="description" content="在线免费图像转换icon图标工具,icon转换,无需登录,无需付费,用完就走,使用非常方便">
     <link rel="stylesheet" href="./css.css">
     <link href="bootstrap.min.css" rel="stylesheet" />
-    <link rel="canonical" href="https://icon.openai2025.com/">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LLM9RV8TM"></script>
     <script>
@@ -22,63 +21,111 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="row">
-        <div class="col-xs-6">
-            <h1 class="h-left">图片转换icon图标</h1>
-        </div>
-        <div class="col-xs-6 h-right">
-            <a href="https://www.openai2025.com" target="_blank">传道软件工具箱</a>
-        </div>
-    </div>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">图片转换icon图标</h1>
+                <div class="header-link">
+                    <a href="https://www.openai2025.com" target="_blank">传道软件工具箱</a>
+                </div>
+            </div>
+        </header>
   
 
 
-    <form id="form">
-        <div class='formLine'>
-            <span class="l">文件:</span>
-            <div class="r file-r">
-                <p>选择一个文件: <input id="imageInput" type="file" name='file' accept="image/jpeg,image/gif,image/png,image/bmp,image/webp"></p>
-            </div>
-        </div>
-        <div id="imageContainer"></div>
-        <div class='formLine'>
-            <span class="l">尺寸:</span>
-            <div class="r">
-                <p>
-                    <input type="checkBox" name="size" value="16" checked>16x16
-                    <input type="checkBox" name="size" value="32">32x32
-                    <input type="checkBox" name="size" value="48">48x48
-                    <input type="checkBox" name="size" value="96" checked>96x96
-                    <input type="checkBox" name="size" value="128">128x128
-                    <input type="checkBox" name="size" value="256" checked>256x256
-                    <input type="checkBox" name="size" value="512">512x512
-                </p>
-            </div>
-        </div>
-        <div class='formLine'>
-            <span class="l">形状:</span>
-            <div class="r">
-                <p>
-                    <input type="radio" name="shape" value="square" checked>正方形
-                    <input type="radio" name="shape" value="circle">圆形
-                    <input type="radio" name="shape" value="fillet">圆角矩形
-                </p>
-            </div>
-        </div>
-        <div class='formLine'>
-            <span class="l">留白:</span>
-            <div class="r">
-                <p>
-                    <input type="checkBox" name="bleed" value="bleed" checked> 启用（此选项只在形状为“圆角矩形”时生效）
-                </p>
-            </div>
-        </div>
-        <div class='formLine butotn-p'>
-            <button id="b" type="submit">转换</button>
-        </div>
-    </form>
+        <main class="main-content">
+            <form id="form" class="converter-form">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label class="form-label">选择图片文件</label>
+                        <div class="file-input-wrapper">
+                            <input id="imageInput" type="file" name='file' accept="image/jpeg,image/gif,image/png,image/bmp,image/webp" class="file-input">
+                            <div class="file-input-display">
+                                <span class="file-text">点击选择图片文件</span>
+                                <span class="file-icon">📁</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="imageContainer" class="image-preview"></div>
+                </div>
 
-    <center>(<a href="./index.html">简体中文</a> | <a href="./index-en.html">English</a>)</center>
+                <div class="form-section">
+                    <label class="form-label">图标尺寸</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="16" checked>
+                            <span class="checkbox-text">16×16</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="32">
+                            <span class="checkbox-text">32×32</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="48">
+                            <span class="checkbox-text">48×48</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="96" checked>
+                            <span class="checkbox-text">96×96</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="128">
+                            <span class="checkbox-text">128×128</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="256" checked>
+                            <span class="checkbox-text">256×256</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="size" value="512">
+                            <span class="checkbox-text">512×512</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="form-label">图标形状</label>
+                    <div class="radio-group">
+                        <label class="radio-item">
+                            <input type="radio" name="shape" value="square" checked>
+                            <span class="radio-text">正方形</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="shape" value="circle">
+                            <span class="radio-text">圆形</span>
+                        </label>
+                        <label class="radio-item">
+                            <input type="radio" name="shape" value="fillet">
+                            <span class="radio-text">圆角矩形</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="bleed" value="bleed" checked>
+                        <span class="checkbox-text">启用留白（仅在圆角矩形时生效）</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button id="b" type="submit" class="convert-btn">
+                        <span class="btn-text">开始转换</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <div class="language-switcher">
+                <a href="./index.html" class="lang-link active">简体中文</a>
+                <span class="separator">|</span>
+                <a href="./index-en.html" class="lang-link">English</a>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
@@ -140,18 +187,25 @@
     function showImg() {
         const imageInput = document.getElementById('imageInput');
         const imageContainer = document.getElementById('imageContainer');
+        const fileText = document.querySelector('.file-text');
+        const fileIcon = document.querySelector('.file-icon');
 
         imageInput.addEventListener('change', function (event) {
             const file = event.target.files[0];
             if (file) {
+                // 更新文件显示
+                fileText.textContent = file.name;
+                fileIcon.textContent = '✓';
+                
+                // 清空之前的预览
+                imageContainer.innerHTML = '';
+                
                 const reader = new FileReader();
                 reader.onload = function (e) {
                     const img = document.createElement('img');
                     img.src = e.target.result;
-                    img.style.maxWidth = '100%';
+                    img.className = 'preview-image';
                     imageContainer.appendChild(img);
-
-
                 };
                 reader.readAsDataURL(file);
             }
