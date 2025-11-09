@@ -76,6 +76,131 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* 功能说明和使用帮助区域 */
+.info-section,
+.help-section {
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.help-section {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4a5568;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* 功能说明样式 */
+.info-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.info-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.info-text h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.info-text p {
+    font-size: 0.95rem;
+    color: #718096;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 使用帮助样式 */
+.help-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.help-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    background: #f7fafc;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.help-step:hover {
+    background: rgba(102, 126, 234, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: #718096;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.step-content strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
 .converter-form {
     max-width: 100%;
 }
@@ -330,6 +455,30 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .info-content {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .info-item {
+        padding: 16px;
+    }
+
+    .help-step {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .step-number {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -360,6 +509,45 @@ body {
     }
     
     .file-text {
+        font-size: 0.9rem;
+    }
+
+    .info-content {
+        gap: 12px;
+    }
+
+    .info-item {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .info-icon {
+        font-size: 1.5rem;
+    }
+
+    .help-step {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .info-text h3,
+    .step-content h3 {
+        font-size: 1rem;
+    }
+
+    .info-text p,
+    .step-content p {
         font-size: 0.9rem;
     }
 }
