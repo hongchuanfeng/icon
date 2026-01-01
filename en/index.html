@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Image to ICO Icon Converter | PNG/JPG to ICO | Free No Login</title>
-    <meta name="keywords" content="online free image conversion icon tool,online icon tool,image conversion icon online conversion,icon conversion,icon,conversion,image processing">
-    <meta name="description" content="Online free image conversion icon tool,icon conversion,no need to log in,no need to pay,just leave after use,very convenient to use">
+    <title>Online Image to ICO Converter | PNG/JPG to ICO | Free No Login</title>
+    <meta name="keywords" content="online free image converter icon tool,online icon tool,image converter icon online conversion,icon conversion,icon,conversion,image processing">
+    <meta name="description" content="Online free image to icon converter tool,icon conversion,no login required,no payment required,use and leave,very convenient to use">
     <link rel="stylesheet" href="../css.css">
     <link href="../bootstrap.min.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="canonical" href="https://icon.openai2025.com/en/index.html">
+    <link rel="canonical" href="https://icon.openai2025.com/index.html">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFX5PE90T5"></script>
 <script>
@@ -28,9 +28,11 @@
         <header class="header">
             <div class="header-content">
                 <h1 class="main-title">Image to Icon Converter</h1>
-               
+
                 <nav class="header-link" style="margin-top:8px;">
                     <a href="./index.html" class="lang-link">Home</a>
+                    <span class="separator">|</span>
+                    <a href="./news.html" class="lang-link">ICO Intro</a>
                     <span class="separator">|</span>
                     <a href="./about.html" class="lang-link">About Us</a>
                     <span class="separator">|</span>
@@ -51,12 +53,12 @@
                         <div class="file-input-wrapper">
                             <input id="imageInput" type="file" name='file' accept="image/jpeg,image/gif,image/png,image/bmp,image/webp" class="file-input">
                             <div class="file-input-display">
-                                <span class="file-text">Click to select image file</span>
+                                <span class="file-text">Click to Select Image File</span>
                                 <span class="file-icon">📁</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div id="imageContainer" class="image-preview"></div>
                 </div>
 
@@ -107,7 +109,7 @@
                         </label>
                         <label class="radio-item">
                             <input type="radio" name="shape" value="fillet">
-                            <span class="radio-text">Rounded Square</span>
+                            <span class="radio-text">Rounded Rectangle</span>
                         </label>
                     </div>
                 </div>
@@ -115,97 +117,328 @@
                 <div class="form-section">
                     <label class="checkbox-item">
                         <input type="checkbox" name="bleed" value="bleed" checked>
-                        <span class="checkbox-text">Enable padding (only works with rounded square shape)</span>
+                        <span class="checkbox-text">Enable Padding (Only effective for rounded rectangles)</span>
                     </label>
                 </div>
 
                 <div class="form-actions">
                     <button id="b" type="submit" class="convert-btn">
-                        <span class="btn-text">Start Converting</span>
+                        <span class="btn-text">Start Conversion</span>
                         <span class="btn-icon">⚡</span>
                     </button>
                 </div>
             </form>
 
-            <!-- Features -->
-            <section class="info-section">
+             <!-- 功能说明 -->
+             <section class="info-section">
                 <h2 class="section-title">✨ Features</h2>
                 <div class="info-content">
                     <div class="info-item">
                         <span class="info-icon">🖼️</span>
                         <div class="info-text">
-                            <h3>Multiple Format Support</h3>
-                            <p>Convert various image formats including JPEG, PNG, GIF, BMP, and WebP to ICO icons</p>
+                            <h3>Multi-Format Support</h3>
+                            <p>Supports conversion from JPEG, PNG, GIF, BMP, WebP and other image formats to ICO icons</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">📐</span>
                         <div class="info-text">
                             <h3>Multiple Sizes</h3>
-                            <p>Support various icon sizes: 16×16, 32×32, 48×48, 96×96, 128×128, 256×256, 512×512. You can select multiple sizes at once</p>
+                            <p>Supports 16×16, 32×32, 48×48, 96×96, 128×128, 256×256, 512×512 and other sizes, multiple sizes can be selected simultaneously</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">🎨</span>
                         <div class="info-text">
                             <h3>Multiple Shapes</h3>
-                            <p>Support three icon shapes: square, circle, and rounded square to meet different design needs</p>
+                            <p>Supports square, circle, and rounded rectangle icon shapes to meet different design needs</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">🔒</span>
                         <div class="info-text">
                             <h3>Privacy & Security</h3>
-                            <p>All conversion operations are performed locally in your browser without uploading to servers, protecting your privacy</p>
+                            <p>All conversion operations are completed locally in the browser, no need to upload to the server, protecting your privacy and security</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <span class="info-icon">⚡</span>
                         <div class="info-text">
                             <h3>Fast Conversion</h3>
-                            <p>No registration or login required, completely free, use and go. Fast conversion speed with simple and convenient operation</p>
+                            <p>No registration or login required, no payment needed, use and leave, fast conversion speed, simple and convenient operation</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Usage Guide -->
+            <!-- 示例展示 -->
+            <section class="examples-section">
+                <h2 class="section-title">📸 Conversion Examples</h2>
+                <div class="examples-grid">
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🏢</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Building Icon</h4>
+                            <p>PNG to ICO, 32×32 size</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">📱</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Mobile Icon</h4>
+                            <p>JPEG to ICO, 48×48 size</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🎵</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Music Icon</h4>
+                            <p>GIF to ICO, 64×64 size</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🌟</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Star Icon</h4>
+                            <p>PNG to ICO, circle crop</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">📧</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Email Icon</h4>
+                            <p>BMP to ICO, 96×96 size</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🔍</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Search Icon</h4>
+                            <p>WebP to ICO, square</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🛒</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Shopping Cart Icon</h4>
+                            <p>PNG to ICO, 128×128 size</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">❤️</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Heart Icon</h4>
+                            <p>JPEG to ICO, rounded rectangle</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">⚙️</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Settings Icon</h4>
+                            <p>PNG to ICO, 256×256 size</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">📁</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Folder Icon</h4>
+                            <p>GIF to ICO, multiple sizes</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🔒</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Lock Icon</h4>
+                            <p>PNG to ICO, circle crop</p>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-image">
+                            <div class="example-placeholder">🚀</div>
+                        </div>
+                        <div class="example-info">
+                            <h4>Rocket Icon</h4>
+                            <p>JPEG to ICO, 512×512 size</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常见问题 -->
+            <section class="faq-section">
+                <h2 class="section-title">❓ FAQ</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>What is ICO format? Why do I need to convert?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>ICO is the icon format used by Windows systems for displaying icons of applications, folders, etc. Converting common image formats like PNG and JPG to ICO allows your software to have professional icon display on Windows systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>What image formats are supported for conversion?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>Supports conversion from five common image formats: JPEG, PNG, GIF, BMP, and WebP to ICO format. All conversions are completed locally in the browser, no need to upload to the server.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>Can I generate ICO files with multiple sizes?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>Yes! You can select multiple sizes at once (16×16, 32×32, 48×48, 96×96, 128×128, 256×256, 512×512). The generated ICO file will contain all selected sizes and display perfectly in different scenarios.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>What icon shapes are supported?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>Provides three shape options: Square (maintains original aspect ratio), Circle (circular crop), Rounded Rectangle (rectangle with rounded corners). Rounded rectangles can optionally enable padding.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>Where are the converted files saved?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>After conversion, the file will automatically download to your default download folder. The file name is timestamp+.ico format. You can also find and re-download it in your browser's download manager.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>Are there any image size restrictions?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>For best results, it is recommended to upload images with a resolution of at least 512×512 pixels. The tool will automatically handle image scaling, but images that are too small may affect conversion quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>How long does the conversion take?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>The conversion speed is very fast, usually completed within seconds. Depending on the image size and number of sizes selected, it will not exceed 30 seconds at most.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>Do I need to register or pay?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>Completely free, no registration or login required. Use and leave, all functions are open to everyone. Your privacy and data security are fully protected.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>Can I use it on mobile phones?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>Fully supports mobile devices! All functions can be used normally on mobile browsers. The interface automatically adapts to mobile screens, providing a good user experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="faq-icon">Q</span>
+                            <h3>How to use the converted ICO file?</h3>
+                        </div>
+                        <div class="faq-answer">
+                            <span class="faq-icon">A</span>
+                            <p>When using ICO files for software development, simply reference the file directly. Windows system will automatically select the appropriate size to display. You can also view the icon effect in Windows Explorer.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 使用帮助 -->
             <section class="help-section">
-                <h2 class="section-title">📖 Usage Guide</h2>
+                <h2 class="section-title">📖 How to Use</h2>
                 <div class="help-content">
                     <div class="help-step">
                         <div class="step-number">1</div>
                         <div class="step-content">
                             <h3>Select Image File</h3>
-                            <p>Click the "Click to select image file" area to choose an image from your device. Supported formats include: JPEG, PNG, GIF, BMP, and WebP.</p>
+                            <p>Click the "Click to Select Image File" area to select an image from your device. Supported formats include: JPEG, PNG, GIF, BMP, WebP.</p>
                         </div>
                     </div>
                     <div class="help-step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h3>Choose Icon Size</h3>
-                            <p>Select one or more icon sizes as needed. Common sizes include 16×16, 32×32, 96×96, 256×256, etc. You can select multiple sizes at once, and the generated ICO file will contain all selected sizes.</p>
+                            <h3>Select Icon Size</h3>
+                            <p>Check one or more icon sizes as needed. Common sizes include 16×16, 32×32, 96×96, 256×256, etc. Multiple sizes can be selected at the same time, and the generated ICO file will contain all selected sizes.</p>
                         </div>
                     </div>
                     <div class="help-step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Choose Icon Shape</h3>
-                            <p>Select your desired icon shape: <strong>Square</strong> (maintains original aspect ratio), <strong>Circle</strong> (circular crop), or <strong>Rounded Square</strong> (square with rounded corners).</p>
+                            <h3>Select Icon Shape</h3>
+                            <p>Choose the icon shape you want: <strong>Square</strong> (maintains original aspect ratio), <strong>Circle</strong> (circular crop), <strong>Rounded Rectangle</strong> (rectangle with rounded corners).</p>
                         </div>
                     </div>
                     <div class="help-step">
                         <div class="step-number">4</div>
                         <div class="step-content">
-                            <h3>Set Padding Option</h3>
-                            <p>If you selected the "Rounded Square" shape, you can enable the "padding" option, which will add appropriate padding around the icon to make it look more aesthetically pleasing.</p>
+                            <h3>Set Padding Options</h3>
+                            <p>If you select the "Rounded Rectangle" shape, you can enable the "Padding" option, which will add appropriate white space around the icon to make it look more beautiful.</p>
                         </div>
                     </div>
                     <div class="help-step">
                         <div class="step-number">5</div>
                         <div class="step-content">
-                            <h3>Start Converting</h3>
-                            <p>Click the "Start Converting" button, and the tool will process your image in the browser and generate an ICO file. Once the conversion is complete, the file will automatically download to your device.</p>
+                            <h3>Start Conversion</h3>
+                            <p>Click the "Start Conversion" button, the tool will process your image in the browser and generate the ICO file. After conversion, the file will be automatically downloaded to your device.</p>
                         </div>
                     </div>
                 </div>
@@ -215,11 +448,11 @@
      
         <footer class="footer">
             <div class="language-switcher" style="margin-top:8px;">
-                <a href="./privacy.html" class="lang-link">Privacy Policy</a>
+                <a href="../privacy.html" class="lang-link">隐私政策</a>
                 <span class="separator">|</span>
-                <a href="./terms.html" class="lang-link">Terms of Service</a>
+                <a href="../terms.html" class="lang-link">服务条款</a>
                 <span class="separator">|</span>
-                <span class="lang-link" style="pointer-events:none;">© 2025 Chuandao AI. All rights reserved.</span>
+                <span class="lang-link" style="pointer-events:none;">© 2025 Chuandao AI All rights reserved</span>
             </div>
         </footer>
     </div>
@@ -290,13 +523,13 @@
         imageInput.addEventListener('change', function (event) {
             const file = event.target.files[0];
             if (file) {
-                // Update file display
+                // 更新文件显示
                 fileText.textContent = file.name;
                 fileIcon.textContent = '✓';
-                
-                // Clear previous preview
+
+                // 清空之前的预览
                 imageContainer.innerHTML = '';
-                
+
                 const reader = new FileReader();
                 reader.onload = function (e) {
                     const img = document.createElement('img');
